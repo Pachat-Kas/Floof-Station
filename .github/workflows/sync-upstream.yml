@@ -19,6 +19,8 @@ jobs:
         run: |
           git fetch origin master --depth=1
           git fetch origin upstream --depth=1
+          git branch master origin/master
+          git branch upstream origin/upstream
 
       - name: Configure git
         run: |
