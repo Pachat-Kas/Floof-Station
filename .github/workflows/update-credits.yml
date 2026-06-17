@@ -1,6 +1,7 @@
 name: Update Contrib and Patreons in credits
 
-on: {} # floof disabled, enable when needed
+on:
+  workflow_dispatch:
 
 jobs:
   get_credits:
