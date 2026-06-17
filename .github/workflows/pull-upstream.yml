@@ -16,17 +16,17 @@ jobs:
       UPSTREAM_URL: https://github.com/space-wizards/space-station-14.git
 
     steps:
-    - name: Checkout repository
+    - name: Checkout
       uses: actions/checkout@v4
       with:
         fetch-depth: 1
 
-    - name: Configure upstream remote and fetch
+    - name: Configure upstream
       run: |
         git remote add upstream "$UPSTREAM_URL" || true
         git fetch --depth=1 upstream master
 
-    - name: push
+    - name: Push updates
       run: |
         git push --force \
           https://x-access-token:${{ secrets.BOT_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git \
