@@ -11,7 +11,7 @@ on:
 
 jobs:
   check-manifest:
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
 
     outputs:
       should_run: ${{ steps.check.outputs.should_run }}
