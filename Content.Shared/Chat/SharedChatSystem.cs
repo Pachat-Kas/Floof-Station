@@ -171,7 +171,7 @@ public abstract partial class SharedChatSystem : EntitySystem
             return true;
         }
 
-        if (!(input.StartsWith(RadioChannelPrefix)))
+        if (!(input.StartsWith(RadioChannelPrefix) || input.StartsWith(RadioChannelAltPrefix)))
             return false;
 
         if (input.Length < 2 || char.IsWhiteSpace(input[1]))
@@ -384,8 +384,7 @@ public abstract partial class SharedChatSystem : EntitySystem
         string? nameOverride = null,
         bool checkRadioPrefix = true,
         bool ignoreActionBlocker = false,
-        LanguagePrototype? languageOverride = null, // Starlight
-        string? color = null
+        LanguagePrototype? languageOverride = null // Starlight
         )
     { }
 
