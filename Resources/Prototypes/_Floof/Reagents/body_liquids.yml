@@ -9,7 +9,7 @@
   viscosity: 0.35
   recognizable: true
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 0.2
@@ -25,13 +25,15 @@
   name: reagent-name-squirt
   group: Biological
   desc: reagent-desc-squirt
-  slippery: true
+  slipData:
+    requiredSlipSpeed: 1
+    superSlippery: true
   physicalDesc: reagent-physical-desc-shiny
   flavor: funny
   color: "#d6d6d6"
   recognizable: true
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 0.3
@@ -41,9 +43,7 @@
       volume: 4
   tileReactions:
   - !type:SpillTileReaction
-    paralyzeTime: 0.5
-    launchForwardsMultiplier: 1.2
-    requiredSlipSpeed: 1
+  friction: 0.05
 
 - type: reagent
   id: MilkBreast
@@ -60,7 +60,7 @@
   - !type:PlantAdjustWater
     amount: 0.9
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 4
