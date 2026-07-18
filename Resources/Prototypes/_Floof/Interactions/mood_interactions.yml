@@ -33,7 +33,7 @@
       inverted: true
     - !type:EntityWhitelistRequirement
       whitelist:
-        components: [HumanoidAppearance]
+        components: [HumanoidProfile]
   action:
     !type:NoOpAction
 #    !type:MoodAction
@@ -51,7 +51,7 @@
       allowedStates: [Alive]
     - !type:EntityWhitelistRequirement
       blacklist:
-        components: [HumanoidAppearance]
+        components: [HumanoidProfile]
   action:
     !type:NoOpAction
 #    !type:ComplexAction # TODO might wanna make a multiplexer action for situations like this
@@ -100,7 +100,7 @@
     requirements:
     - !type:EntityWhitelistRequirement
       whitelist:
-        components: [MobState, Anomaly, Food]
+        components: [MobState, Anomaly, Edible]
         tags: [Window] # yes.
 #    - !type:SlotObstructionRequirement
 #      slot: MASK

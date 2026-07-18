@@ -107,6 +107,7 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
     [DataField]
     public bool GlobalCooldown = false;
 
+    [DataField]
     public RangeSpecifier Range = new();
 
     /// <summary>
