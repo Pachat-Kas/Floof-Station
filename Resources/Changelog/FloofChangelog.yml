@@ -145,3 +145,9 @@ Entries:
       message: Fixed Feroxi medical loadouts not including a water box.
   id: 19
   time: '2026-07-18T17:29:01.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Fix
+      message: Fixed a bug involving ghosts not hearing normal chat.
+  id: 20
+  time: '2026-07-18T17:31:17.0000000+00:00'
