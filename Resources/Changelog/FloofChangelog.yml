@@ -119,3 +119,17 @@ Entries:
       message: Added Interactions!
   id: 17
   time: '2026-07-18T15:48:13.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Add
+      message: Added a clicker! You can select it from the loadouts menu.
+    - type: Add
+      message: 'Added a variety of sex toys: dildos, fleshlights, and vibes.'
+    - type: Add
+      message: >-
+        Added Lewd Crates and Sex Toy Crates. They can spawn or be bought from
+        cargo.
+    - type: Add
+      message: Added lewd dressers.
+  id: 18
+  time: '2026-07-18T16:38:54.0000000+00:00'
